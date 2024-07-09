@@ -32,7 +32,7 @@ export const navLinks = [
   {
     id: 1,
     name: 'Home',
-    path: 'home',
+    path: '/',
   },
   {
     id: 2,
@@ -94,61 +94,125 @@ export const features = [
 
 export const menu = [
   {
-    id: 1,
-    // img: menu1,
-    title: 'Americano Coffee',
-    description: 'Milk with vanilla flavored',
-    price: 50.25,
+    category: 'Hot Coffee',
+    menuItems: [
+      {
+        id: 1,
+        name: 'Espresso',
+        price: 80000,
+        description: 'Balanced dose of our house espresso blend',
+        // img: HotCoffee1,
+      },
+      {
+        id: 2,
+        name: 'Doppio',
+        price: 120000,
+        description: 'Double dose of house espresso blend',
+        // img: HotCoffee2,
+      },
+      {
+        id: 3,
+        name: 'Cappuccino',
+        price: 120000,
+        description: 'Foamy frothed milk added over our house espresso',
+        // img: HotCoffee3,
+      },
+      {
+        id: 4,
+        name: 'Flat White',
+        price: 150000,
+        description: 'Rich & creamy textured milk served with double espresso shots',
+        // img: HotCoffee4,
+      },
+      {
+        id: 5,
+        name: 'Cafe Latte',
+        price: 130000,
+        description: 'Espresso shot added over a steamed and frothy milk',
+        // img: HotCoffee5,
+      },
+      {
+        id: 6,
+        name: 'Spanish Latte',
+        price: 150000,
+        description: 'Our delicious latte sweetened with condensed milk and sprinkled with fragrant spices',
+        // img: HotCoffee6,
+      },
+      {
+        id: 7,
+        name: 'Flavored Latte',
+        price: 150000,
+        description: 'Add Mocha, Vanilla, Caramel or available flavors',
+        // img: HotCoffee7,
+      },
+      {
+        id: 8,
+        name: 'House Brewed Coffee',
+        price: 120000,
+        description: 'Add Mocha, Vanilla, Caramel or available flavors',
+        // img: HotCoffee8,
+      },
+    ]
   },
   {
-    id: 2,
-    // img: menu2,
-    title: 'Cappuccino Arabica',
-    description: 'Milk with vanilla flavored',
-    price: 70.25,
+    category: 'Coffee-Less',
+    menuItems: [
+      {
+        id: 1,
+        name: 'Hot Chocolate',
+        price: 130000,
+        description: 'Delicious & aromatic, intense chocolate mix melted in creamy hot milk ',
+        // img: Coffee-Less1,
+      },
+      {
+        id: 2,
+        name: 'Flavored Hot Chocolate',
+        price: 150000,
+        description: 'We offer heart warming flavors for our delicious hot chocolate',
+        // img: Coffee-Less2,
+      },
+      {
+        id: 3,
+        name: 'Tea Variety',
+        price: 100000,
+        description: 'Foamy frothed milk added over our house espresso',
+        // img: Coffee-Less3,
+      },
+    ]
   },
   {
-    id: 3,
-    // img: menu3,
-    title: 'Milk Cream Coffee',
-    description: 'Milk with vanilla flavored',
-    price: 30.25,
-  },
-  {
-    id: 4,
-    // img: menu4,
-    title: 'Special Raw Coffee',
-    description: 'Milk with vanilla flavored',
-    price: 80.25,
-  },
-  {
-    id: 5,
-    // img: menu5,
-    title: 'Fresh Black Coffee',
-    description: 'Milk with vanilla flavored',
-    price: 90.25,
-  },
-  {
-    id: 6,
-    // img: menu6,
-    title: 'Cappuccino Arabica',
-    description: 'Milk with vanilla flavored',
-    price: 70.25,
-  },
-  {
-    id: 7,
-    // img: menu7,
-    title: 'Milk Cream Coffee',
-    description: 'Milk with vanilla flavored',
-    price: 120.25,
-  },
-  {
-    id: 8,
-    // img: menu8,
-    title: 'Cold Coffee',
-    description: 'Milk with vanilla flavored',
-    price: 40.25,
-  },
+    category: 'Coffee-Less',
+    menuItems: [
+      {
+        id: 1,
+        name: 'Hot Chocolate',
+        price: 130000,
+        description: 'Delicious & aromatic, intense chocolate mix melted in creamy hot milk ',
+        // img: Coffee-Less1,
+      },
+      {
+        id: 2,
+        name: 'Flavored Hot Chocolate',
+        price: 150000,
+        description: 'We offer heart warming flavors for our delicious hot chocolate',
+        // img: Coffee-Less2,
+      },
+      {
+        id: 3,
+        name: 'Tea Variety',
+        price: 100000,
+        description: 'Foamy frothed milk added over our house espresso',
+        // img: Coffee-Less3,
+      },
+      {
+        id: 4,
+        name: 'Sunshine',
+        price: 100000,
+        description: 'Foamy frothed milk added over our house espresso',
+        // img: Coffee-Less3,
+      },
+    ]
+  }
 ];
 
 // export const gallery = [

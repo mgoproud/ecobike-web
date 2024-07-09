@@ -1,26 +1,24 @@
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, Outlet } from "react-router-dom";
 
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import About from './pages/about'
+import Features from './pages/features'
+import Menu from './pages/menu'
+import Community from './pages/community'
 import './App.css'
-import Banner from './components/Banner/Banner'
-import Features from './components/Features/Features'
-import Hero from './components/Hero/Hero'
-import Navbar from './components/Navbar/Navbar'
-import About from './components/About/About'
-import Footer from './components/Footer/Footer'
+
 
 function App() {
 
-
   return (
-
-      <div className='overflow-x-hidden w-full'>
-        <Navbar />
-        <Hero />
-        <Banner />
-        <About />
-        <Features />
-        <Footer />
-      </div>   
-
+      <div className='overflow-x-hidden w-full min-h-[100vh] flex flex-col'>
+          <Navbar />
+          <Outlet />
+          <Footer />
+      </div>
+         
   )
 }
 

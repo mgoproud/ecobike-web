@@ -9,9 +9,7 @@ const bgStyle = {
     backgroundSize: 'cover',
     width: '100%',
     height: '100%',
-    // height: '630px',
     position: 'relative',
-    // opacity: '0.90',
 }
 
 const About = () => {
