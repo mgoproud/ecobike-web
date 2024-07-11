@@ -51,13 +51,13 @@ export const navLinks = [
   },
   {
     id: 5,
-    name: 'Contact',
-    path: 'contact',
+    name: 'Community',
+    path: 'community',
   },
   {
     id: 6,
-    name: 'Community',
-    path: 'community',
+    name: 'Contact',
+    path: 'contact',
   },
 ];
 

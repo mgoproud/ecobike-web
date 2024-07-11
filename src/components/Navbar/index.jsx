@@ -13,7 +13,7 @@ const Navbar = () => {
             
             {
                 navLinks.map(({ name, path, id }) => (
-                    <li key={id} className='cursor-pointer group duration-200'>
+                    <li key={id} className='cursor-pointer group duration-200 last-of-type:ml-8 last-of-type:text-brandRed'>
                       <NavLink
                             key={id}
                             to={path}

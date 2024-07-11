@@ -22,7 +22,7 @@ const Menu = () => {
                     <p className='font-inter text-3xl text-brandBlack font-semibold'>menu</p>
                 </div>
             
-                <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 place-items-center place-content-center min-h-[680px] lg:px-10">
+                <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 place-items-center lg:px-10 py-[4rem]">
                     {    
                     menu?.map((cat) => (
                             <div key={cat.category} className='space-y-4 md:space-y-6 lg:space-y-9 text-primary order-2 sm:order-1 px-2 lg:px-0 max-h-[440px]'>
