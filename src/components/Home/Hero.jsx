@@ -19,7 +19,7 @@ const Hero = () => {
     <>
     <div className='relative w-full' style={BgStyle}>
     <div className="bg-brandLight/80 rounded-lg">
-        <div className="container min-h-[100vh] md:min-h-[680px] grid grid-cols-1 sm:grid-cols-2 gap-3 place-items-center place-content-start p-3 lg:px-10">
+        <div className="container md:min-h-[680px] grid grid-cols-1 sm:grid-cols-2 gap-3 place-items-center place-content-start p-3 lg:px-10">
             {/* text */}
             <div className='space-y-4 md:space-y-6 lg:space-y-9 text-primary order-2 sm:order-1 px-2 lg:px-0 max-h-[440px]'>
                 <h1 className='text-center lg:text-start text-[1.5rem] md:text-[2rem] lg:text-[2.25rem] md:tracking-wide'><span className='font-cursive text-5xl font-medium mr-1'>I</span>nnovative <span className='font-cursive text-5xl font-medium mr-1'>S</span>ustainable <span className='font-cursive text-5xl font-medium mr-1'>M</span>obile <br /><span className='inline-block mt-2'> <span className='text-brandRed font-cursive text-5xl font-semibold px-0'>ecobike coffee </span> is alive</span></h1>
