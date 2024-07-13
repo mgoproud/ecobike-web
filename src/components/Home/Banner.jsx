@@ -6,7 +6,7 @@ import coffeeCup from '../../assets/images/cup-1.png'
 
 const Banner = () => {
   return (
-    <div className='container py-16 relative'>
+    <div className='container relative'>
       <div>
         <h2 className='py-8 tracking-wider text-2xl font-semibold text-brandBlack text-center'>
         Explore Our tailored menu
@@ -35,24 +35,24 @@ const Banner = () => {
         </div>
 
         {/* button section */}
-        <div className='flex justify-center mt-14 md:mt-10'>
+        <div className='flex justify-center mt-40 md:mt-10'>
           <PrimaryButton text='Explore Our Features' />
         </div>
 
       </div>
       {/* bg images */}
-      <div className='absolute bottom-0 left-0 md:top-5 md:left-6 lg:left-14'>
+      <div className='absolute bottom-0 left-0 md:top-5 md:left-6 lg:left-14 hidden md:inline-block'>
         <img src={leaf} alt="leaf" className='max-w-[60px] md:max-w-[80px]' />
       </div>
       <div
-        className='absolute bottom-0 left-8 md:bottom-16 md:left-6 lg:left-14'
+        className='absolute bottom-36 md:bottom-16 left-[9.5rem] md:left-6 lg:left-14'
       >
-        <img src={greenTechnology} alt="green technology" className='max-w-[210px] md:max-w-[260px] lg:max-w-[320px] opacity-90 rounded-full md:rounded-[4%]' />
+        <img src={greenTechnology} alt="green technology" className='max-w-[180px] md:max-w-[260px] lg:max-w-[320px] opacity-90 rounded-full md:rounded-[4%]' />
       </div>
       <div
-        className='absolute top-[23%] right-[20%] md:right-40 md:top-[24%] lg:top-40 lg:right-80 opacity-90 '
+        className='absolute right-[42%] top-[33%] md:right-40 md:top-[24%] lg:top-40 lg:right-80 opacity-90 '
       >
-        <img src={coffeeCup} alt="green technology" className='max-w-[90px] md:max-w-[100px]' />
+        <img src={coffeeCup} alt="green technology" className='max-w-[80px] md:max-w-[100px]' />
       </div>
     </div>
   )

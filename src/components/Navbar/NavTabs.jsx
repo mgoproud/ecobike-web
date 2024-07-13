@@ -1,7 +1,7 @@
 import { navLinks } from '../../data'
 import { NavLink } from 'react-router-dom'
 
-const NavTabs = ({liClasses, linkClasses }) => {
+const NavTabs = ({liClasses, linkClasses, setNavStatus }) => {
   return (
     <>
         {
@@ -14,6 +14,7 @@ const NavTabs = ({liClasses, linkClasses }) => {
                         key={id}
                         to={path}
                         className={linkClasses}
+                        onClick={() => setNavStatus('hidden')}
                         >{name}</NavLink>
                 </li>
             ))

@@ -4,18 +4,18 @@ const bgStyle = {
   backgroundImage: `url(${communityBg})`,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
-  backgroundSize: 'cover',
+  backgroundSize: 'contain',
   width: '100%',
   height: '100%',
-  // position: 'relative',
+  position: 'relative',
 }
 
 const Community = () => {
   return (
 
 <>
-        <div style={bgStyle} className='pb-14'>
-            <div className='container flex flex-col min-h-[550px] gap-32 relative z-10'>
+        <div className='pb-14'>
+            <div style={bgStyle} className='container flex flex-col min-h-[550px] gap-32 relative z-10'>
                 <h1 className='py-4 tracking-wider text-3xl md:text-4xl font-semibold text-brandBlack text-center relative top-6 md:top-12'>About Us</h1>
 
                 {/* card section */}

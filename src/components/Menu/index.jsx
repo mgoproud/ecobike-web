@@ -19,7 +19,7 @@ const Menu = () => {
             <div className="bg-brandLight/80 rounded-lg">
                 <div className='tracking-wide flex flex-col items-center pt-6 relative top-10 mb-3'>
                     <h2 className='inline-block font-cursive text-5xl text-brandRed font-semibold'>ecobike coffee</h2>
-                    <p className='font-inter text-3xl text-brandBlack font-semibold'>menu</p>
+                    <p className='font-inter text-2xl text-brandBlack font-semibold'>menu</p>
                 </div>
             
                 <div className="container grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-center lg:px-14 py-[4rem]">
