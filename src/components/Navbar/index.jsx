@@ -51,7 +51,7 @@ const Navbar = () => {
           <div className='flex items-center gap-[2px] py-2 '>
             <span className='flex'>
               <GiHamburgerMenu 
-                  className={`z-[9999] cursor-pointer ${menuStatus === 'block' ? 'rotate-45' : null} group-focus:rotate-45 group-active:rotate-45 duration-200 text-3xl text-brandRed block lg:hidden absolute right-5`} 
+                  className={`z-[9999] cursor-pointer ${menuStatus === 'block' ? 'rotate-45' : null} duration-200 text-3xl text-brandRed block lg:hidden absolute right-5`} 
                   onClick={menuToggle}
               />
 
