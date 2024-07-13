@@ -30,7 +30,7 @@ const Hero = () => {
                 <img 
                     src={hero1} 
                     alt="hero_img" 
-                    className='p-3 max-h-[320px] md:max-h-[380px] lg:max-h-[440px] w-auto lg:scale-100 lg:translate-4' 
+                    className='p-3 max-h-[280px] md:max-h-[380px] lg:max-h-[440px] w-auto lg:scale-100 lg:translate-4' 
                     />
             </div>
         </div>
