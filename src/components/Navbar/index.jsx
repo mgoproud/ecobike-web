@@ -21,7 +21,7 @@ const Navbar = ({ handlePopup }) => {
 
   return (
     <header 
-      data-aos='fade'
+      // data-aos='fade'
       className='bg-brandBlack text-brandLight shadow-md min-h-[14vh] max-h-full flex items-center'
     >
       <nav className="container flex justify-center md:justify-between gap-6 lg:gap-12 py-4 sm:py-3">
