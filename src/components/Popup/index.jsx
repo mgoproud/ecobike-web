@@ -68,18 +68,18 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
       {
     showPopup && (
         // <div>
-            <div className="h-screen w-screen fixed top-0 left-0 bg-brandBlack/50 z-50 backdrop-blur-sm">
-                <div className='relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-4 shadow-md bg-white rounded-md duration-200 w-[600px]'>
+            <div className="h-screen w-screen fixed top-0 left-0 bg-brandBlack/60 z-50 backdrop-blur-sm">
+                <div className='relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 shadow-md bg-white rounded-md duration-200 md:mx-0 md:w-[600px] lg:w-[680px]'>
                 
                 {/* header section */}
-                <div className='flex items-center justify-between my-3'>
+                <div className='flex items-center justify-between my-3 mx-1'>
                     <div>
                         <h1 className='text-2xl font-semibold text-brandBlack text-center'>Contact Us</h1>
 
                     </div>
                     <div>
                         <IoCloseOutline 
-                            className='text-2xl cursor-pointer'
+                            className='text-3xl cursor-pointer'
                             onClick={() => setShowPopup(false)}
                         />
                     </div>
@@ -150,10 +150,10 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                 
                 <div className='mt-5'>
                     
-                    <p className='text-center'>Join our platforms to stay with us</p>
+                    <p className='text-center text-lg'>Join our platforms</p>
                     <div className='flex justify-center gap-2 mt-2'>
-                        <FaFacebook className='cursor-pointer text-3xl text-brandGreen hover:text-brandDarkGreen duration-200' />
-                        <FaInstagram className='cursor-pointer text-3xl text-brandGreen hover:text-brandDarkGreen duration-200' />
+                        <FaFacebook className='cursor-pointer text-3xl hover:text-brandDarkRed duration-200' />
+                        <FaInstagram className='cursor-pointer text-3xl hover:text-brandDarkRed duration-200' />
                     </div>
                 </div>
                 </div>

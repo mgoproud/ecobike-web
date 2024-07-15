@@ -55,13 +55,13 @@ const Banner = () => {
       </div>
       <div
         // data-aos='fade-right'
-        className='absolute bottom-20 md:top-[22rem] left-[12.5rem] md:left-6 lg:left-24'
+        className='absolute bottom-20 md:top-[22rem] left-[32%] md:left-6 lg:left-24'
       >
         <img src={greenTechnology} alt="green technology" className='max-w-[180px] md:max-w-[250px] opacity-90 rounded-full md:rounded-[4%]' />
       </div>
       <div
         // data-aos='fade-left'
-        className='absolute left-[15rem] md:left-[32rem] lg:left-[60rem] top-[30%] md:top-[9rem] lg:top-[8rem] opacity-90 '
+        className='absolute left-[42%] md:left-[32rem] lg:left-[60rem] top-[30%] md:top-[9rem] lg:top-[8rem] opacity-90 '
       >
         <img src={coffeeCup} alt="green technology" className='max-w-[90px] md:max-w-[100px] lg:max-w-[120px]' />
       </div>

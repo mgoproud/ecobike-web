@@ -15,7 +15,7 @@ const Navbar = ({ handlePopup }) => {
 
 
   const handleContact = () => {
-    navToggle()
+    setNavStatus('hidden')
     handlePopup()
   }
 
