@@ -4,10 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    /* background-color: #1c1815; */
-}
 
 .speed {
     transition:  0.2s ease-in-out;
 }
+
+a.active {
+    color: #ef2629;
+  }

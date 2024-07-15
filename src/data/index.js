@@ -54,11 +54,6 @@ export const navLinks = [
     name: 'Community',
     path: 'community',
   },
-  {
-    id: 6,
-    name: 'Contact',
-    path: 'contact',
-  },
 ];
 
 export const features = [

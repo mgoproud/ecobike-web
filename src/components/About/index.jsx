@@ -17,10 +17,17 @@ const About = () => {
     <>
         <div style={bgStyle} className='pb-14'>
             <div className='container flex flex-col min-h-[550px] gap-32 relative z-10'>
-                <h1 className='py-4 tracking-wider text-3xl md:text-4xl font-semibold text-brandBlack text-center relative top-6 md:top-12'>About Us</h1>
+                <h1 
+                    // data-aos='fade' 
+                    className='py-4 tracking-wider text-3xl md:text-4xl font-semibold text-brandBlack text-center relative top-6 md:top-12'
+                >About Us</h1>
 
                 {/* card section */}
-                <div className='text-center bg-brandLight/85 p-10 my-10 max-w-[100%] md:max-w-[90%] mx-auto rounded-md'>
+                <div 
+                    // data-aos='fade' 
+                    // data-aos-delay='300' 
+                    className='text-center bg-brandLight/85 p-10 my-10 max-w-[100%] md:max-w-[90%] mx-auto rounded-md'
+                >
                     <p className='text-brandBlack text-lg'>
                         We are a team of professionals, engeineers & investors that using our full efforts and time, we invented this nature-friendly sustainable full-featured ecobike coffee
                     </p>
