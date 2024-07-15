@@ -30,7 +30,7 @@ useEffect(() => {
 
   return (
       <div className='overflow-x-hidden w-full min-h-[100vh] flex flex-col'>
-          <Navbar handlePopup={handlePopup} />
+          <Navbar showPopup={showPopup} setShowPopup={setShowPopup} />
           <Outlet />
           <Footer />
           <Popup 

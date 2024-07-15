@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import NavTabs from './NavTabs';
 
 
-const Navbar = ({ handlePopup }) => {
+const Navbar = ({ showPopup, setShowPopup }) => {
 
   const [navStatus, setNavStatus] = useState('hidden')
 
@@ -16,7 +16,7 @@ const Navbar = ({ handlePopup }) => {
 
   const handleContact = () => {
     setNavStatus('hidden')
-    handlePopup()
+    setShowPopup(true)
   }
 
   return (
@@ -25,7 +25,7 @@ const Navbar = ({ handlePopup }) => {
       className='bg-brandBlack text-brandLight shadow-md min-h-[14vh] max-h-full flex items-center'
     >
       <nav className="container flex justify-center md:justify-between gap-6 lg:gap-12 py-4 sm:py-3">
-        <div className='text-brandRed font-cursive text-[2rem] font-semibold tracking-wide p-0'>
+        <div className='z-[9999] text-brandRed font-cursive text-[2rem] font-semibold tracking-wide p-0'>
           <NavLink to='/'>
             ecobike coffee
           </NavLink>
@@ -48,15 +48,16 @@ const Navbar = ({ handlePopup }) => {
 
                     {/* hamburger menu */}
         <div className='group'>
+          { !showPopup &&
           <div className='flex items-center gap-[2px] py-2 '>
             <span className='flex'>
               <GiHamburgerMenu 
-                  className={`z-[9999] cursor-pointer ${navStatus === 'flex' ? 'rotate-45' : null} duration-0 text-3xl text-brandRed block md:hidden absolute right-5`} 
+                  className={`z-[9000] cursor-pointer ${navStatus === 'flex' ? 'rotate-45' : null} duration-0 text-3xl text-brandRed block md:hidden absolute right-5`} 
                   onClick={() => navToggle()}
               />
             </span>
           </div>
-
+          }
           <div className={`absolute top-16 right-0 z-[999] ${navStatus} bg-brandBlack min-w-[150px] h-[100vh] w-[100vw] flex-col justify-start`}   > 
             <ul className='p-4 relative top-16 flex flex-col items-center justify-evenly'>
               <NavTabs 

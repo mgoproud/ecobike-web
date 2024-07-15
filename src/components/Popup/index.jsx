@@ -54,7 +54,7 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
             <div
                 data-aos='zoom-in'
                 data-aos-delay='100'
-                className='message bg-brandGreen rounded-lg absolute top-36 left-[26%] flex items-center p-1 duration-200'>
+                className='z-[9999] message bg-brandGreen rounded-lg absolute top-36 left-[26%] flex items-center p-1 duration-200'>
                 <p className='font-medium text-lg text-brandLight py-2 px-2 tracking-wide'>We received your inquiry successfully and we'll contact you shortly. Thank you</p>
                 <IoCloseOutline className='text-3xl cursor-pointer text-brandLight'
                     onClick={() => setShowMessage(false)}
@@ -68,13 +68,13 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
       {
     showPopup && (
         // <div>
-            <div className="h-screen w-screen fixed top-0 left-0 bg-brandBlack/60 z-50 backdrop-blur-sm">
-                <div className='relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 shadow-md bg-white rounded-md duration-200 md:mx-0 md:w-[600px] lg:w-[680px]'>
+            <div className="h-screen w-screen fixed top-0 left-0 bg-brandBlack/60 z-50 backdrop-blur-md">
+                <div className='relative top-[58%] left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 shadow-md bg-white rounded-md duration-200 md:mx-0 w-[95%] md:w-[600px] lg:w-[680px]'>
                 
                 {/* header section */}
                 <div className='flex items-center justify-between my-3 mx-1'>
                     <div>
-                        <h1 className='text-2xl font-semibold text-brandBlack text-center'>Contact Us</h1>
+                        <h1 className='text-2xl font-semibold text-brandBlack text-center mb-3'>Contact Us</h1>
 
                     </div>
                     <div>
@@ -87,7 +87,7 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
 
                 {/* contact form */}
                 <form className='my-4' ref={form} onSubmit={handleSubmit}>
-                    <div className='flex items-center my-4'>
+                    <div className='flex flex-col md:flex-row items-center my-4'>
                         <div className='w-fit'>
                             <input 
                                 type='text' 
@@ -95,7 +95,7 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                                 placeholder='Name' 
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                className='outline-none w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'    
+                                className='outline-none w-full md:w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'    
                                 required
                             />
                             <input 
@@ -104,7 +104,7 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                                 placeholder='Email Address' 
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className='outline-none w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'    
+                                className='outline-none w-full md:w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'    
                                 required
                             />
                             <input 
@@ -113,7 +113,7 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                                 placeholder='Occupation' 
                                 value={occupation}
                                 onChange={(e) => setOccupation(e.target.value)}
-                                className='outline-none w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'    
+                                className='outline-none w-full md:w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'    
                                 required
                             />
                             <input 
@@ -122,7 +122,7 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                                 placeholder='Phone Number' 
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)}
-                                className='outline-none w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'        
+                                className='outline-none w-full md:w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'        
                             />
                         </div>
                         <div className='w-full p-2'>
