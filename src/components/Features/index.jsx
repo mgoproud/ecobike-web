@@ -19,7 +19,7 @@ const Features = () => {
 
                         <div className='text-center flex justify-between items-center flex-col gap-3 px-16 md:px-4'>
                             <FaBity className='text-5xl text-brandGreen'  />
-                            {/* <p className='text-4xl rotate-90 text-brandGreen text-center translate-x-3'>....</p> */}
+                            <p className='text-4xl rotate-90 text-brandGreen text-center translate-x-3'>....</p>
                             <h3 className='text-lg font-medium'>Full-Featured Functionality & Menu</h3>
                             <p className='text-brandBlack/70 font-semibold'>sit amet consectetur. Laborum unde odio labore assumenda cupiditate soluta. Ea dignissimos, sint, consequatur</p>
                         </div>
@@ -27,7 +27,7 @@ const Features = () => {
                         {/* 2nd card */}
                         <div className='text-center flex justify-between items-center flex-col gap-3 px-16 md:px-4'>
                             <GiPowerLightning className='text-5xl text-brandRed'  />
-                            {/* <p className='text-4xl rotate-90 text-brandRed text-center translate-x-3'>....</p> */}
+                            <p className='text-4xl rotate-90 text-brandRed text-center translate-x-3'>....</p>
                             <h3 className='text-lg font-medium'>Lightning-Fast Service</h3>
                             <p className='text-brandBlack/70 font-semibold'>placeat dolorem repudiandae labore veritatis reprehenderit dolorem illo quidem, officiis est dolorum sequi veritatis libero!</p>
                         </div>
