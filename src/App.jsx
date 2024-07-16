@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Popup from "./components/Popup";
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
+import Contact from "./components/Contact/Contact";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './App.css'
@@ -13,10 +13,6 @@ function App() {
 
   const [showPopup, setShowPopup] = useState(false)
   const [showMessage, setShowMessage] = useState(false)
-
-  const handlePopup = () => {
-    setShowPopup(true)
-  }
 
 useEffect(() => {
   AOS.init({
@@ -33,7 +29,7 @@ useEffect(() => {
           <Navbar showPopup={showPopup} setShowPopup={setShowPopup} />
           <Outlet />
           <Footer />
-          <Popup 
+          <Contact 
             showPopup={showPopup} 
             setShowPopup={setShowPopup}
             showMessage={showMessage}

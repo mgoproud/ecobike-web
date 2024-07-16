@@ -4,11 +4,11 @@ import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } 
 import App from './App.jsx'
 import './index.css'
 
-import Home from './components/Home'
-import About from './components/About'
-import Features from './components/Features'
-import Menu from './components/Menu'
-import Community from './components/Community'
+import Home from './components/Home/Home.jsx'
+import About from './components/About/About.jsx'
+import Features from './components/Features/Features.jsx'
+import Menu from './components/Menu/Menu.jsx'
+import Community from './components/Community/Community.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

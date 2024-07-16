@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import { IoCloseOutline } from 'react-icons/io5'
 import emailjs from '@emailjs/browser'
 
-const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
+const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -54,13 +54,13 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
             <div
                 data-aos='zoom-in'
                 data-aos-delay='100'
-                className='z-[9999] message bg-brandGreen rounded-lg absolute top-36 left-[26%] flex items-center p-1 duration-200'>
+                className='z-[9999] message bg-brandGreen/80 rounded-md absolute top-36 left-[26%] flex items-center p-1 duration-200'>
                 <p className='font-medium text-lg text-brandLight py-2 px-2 tracking-wide'>We received your inquiry successfully and we'll contact you shortly. Thank you</p>
                 <IoCloseOutline className='text-3xl cursor-pointer text-brandLight'
                     onClick={() => setShowMessage(false)}
                 />
             </div>
-        }
+         } 
             {/* <div className='message'>
                 <p className='hidden absolute top-36 left-[26%] font-medium text-lg bg-brandRed text-brandLight p-4 rounded-xl tracking-wider'>Your inquiry was not sent please contact us again later. Thank you</p>
             </div> */}
@@ -164,4 +164,4 @@ const Popup = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
   )
 }
 
-export default Popup
+export default Contact
