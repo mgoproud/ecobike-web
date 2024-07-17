@@ -94,7 +94,7 @@ const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                             </NavLink>
                             <h2 className='text-2xl font-semibold text-brandBlack mb-3'>Contact Us</h2>
                         </div>
-                        <div className='w-[50%] md:w-[30%]'>
+                        <div className='w-[50%] md:w-[35%]'>
                             <img src={ecobikeImg} alt='ecobike image' className='rounded-md'/>
                         </div>
                     </div>
