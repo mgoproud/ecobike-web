@@ -10,7 +10,7 @@ export default {
         primary: '#1d1c1c',
         primaryLight: 'fff',
         brandRed: '#E8393D',
-        brandDarkRed: '#B22222',
+        brandDarkRed: '#a41e1e',
         // brandGreen: '#2c7b3b',
         brandGreen: '#2E873D',
         brandDarkGreen: '#1e4826',

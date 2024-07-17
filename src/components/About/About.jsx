@@ -33,7 +33,7 @@ const About = () => {
                         We are a team of professionals, engeineers & investors that using our full efforts and time, we invented this nature-friendly sustainable full-featured ecobike coffee
                     </p>
                     <div className='pt-10 flex justify-center'>
-                        <PrimaryButton btnClasses='bg-brandRed hover:bg-brandDarkRed' arrowsClasses='bg-brandDarkRed' value='Contact Us' />
+                        <PrimaryButton btnClasses='bg-brandRed hover:bg-brandDarkGreen' arrowsClasses='bg-brandDarkRed' value='Contact Us' />
                     </div>
                 </div>
             </div>

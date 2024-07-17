@@ -158,7 +158,7 @@ const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                                 
                         </div>
                     </div>
-                    <PrimaryButton className='mt-0' btnClasses='bg-brandRed w-[100%] hover:bg-brandDarkRed' arrowsClasses='bg-brandDarkRed' value='Send' type='submit' setShowPopup={setShowPopup}  />
+                    <PrimaryButton className='mt-0' btnClasses='bg-brandGreen w-[100%] hover:bg-brandDarkRed' arrowsClasses='bg-brandDarkGreen' value='Send' type='submit' setShowPopup={setShowPopup}  />
                     {/* <button 
                         type='submit'
                         className='w-full bg-brandRed hover:bg-brandDarkRed text-brandLight p-2 rounded-md'

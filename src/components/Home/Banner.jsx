@@ -42,7 +42,7 @@ const Banner = () => {
           // data-aos-offset='0' 
           className='flex justify-center mt-40 md:mt-10'
         >
-          <PrimaryButton btnClasses='bg-brandGreen' arrowsClasses='bg-brandDarkGreen' value='Explore Our Features' />
+          <PrimaryButton btnClasses='bg-brandGreen hover:bg-brandDarkRed' arrowsClasses='bg-brandDarkGreen' value='Explore Our Features' />
         </div>
       </div>
 
