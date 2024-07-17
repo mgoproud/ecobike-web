@@ -1,6 +1,7 @@
 import { FaUser } from 'react-icons/fa'
 import aboutBg from '../../assets/images/about-bg-3.jpg'
 import vector from '../../assets/images/vector-wave.png'
+import PrimaryButton from '../Shared/PrimaryButton'
 
 const bgStyle = {
     backgroundImage: `url(${aboutBg})`,
@@ -32,12 +33,7 @@ const About = () => {
                         We are a team of professionals, engeineers & investors that using our full efforts and time, we invented this nature-friendly sustainable full-featured ecobike coffee
                     </p>
                     <div className='pt-10 flex justify-center'>
-                        <button
-                            className='flex justify-center items-center gap-2 bg-brandRed text-xl h-[40px] text-brandLight px-5 py-2 hover:scale-105 duration-200'
-                        >
-                            <FaUser />
-                            Contact Us
-                        </button>
+                        <PrimaryButton btnClasses='bg-brandRed hover:bg-brandDarkRed' arrowsClasses='bg-brandDarkRed' value='Contact Us' />
                     </div>
                 </div>
             </div>
