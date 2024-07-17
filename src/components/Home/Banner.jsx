@@ -42,7 +42,7 @@ const Banner = () => {
           // data-aos-offset='0' 
           className='flex justify-center mt-40 md:mt-10'
         >
-          <PrimaryButton text='Explore Our Features' />
+          <PrimaryButton value='Explore Our Features' />
         </div>
       </div>
 

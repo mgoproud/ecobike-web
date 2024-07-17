@@ -1,45 +1,47 @@
 import communityBg from '../../assets/images/communityBg.jpg'
+import vector from '../../assets/images/vector-wave.png'
+import heroEcobike from '../../assets/images/hero-ecobike.jpeg'
 
 const bgStyle = {
-  backgroundImage: `url(${communityBg})`,
+  backgroundImage: `url(${heroEcobike})`,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   backgroundSize: 'contain',
   width: '100%',
-  height: '100%',
+  height: '100vh',
   position: 'relative',
 }
 
-const Community = () => {
+const Community = ({ showPopup }) => {
   return (
 
 <>
-        <div className='pb-14'>
-            <div style={bgStyle} className='container flex flex-col min-h-[550px] gap-32 relative z-10'>
-                <h1 className='py-4 tracking-wider text-3xl md:text-4xl font-semibold text-brandBlack text-center relative top-6 md:top-12'>About Us</h1>
+        <div className=' bg-brandRed/40 flex'>
+            <div style={bgStyle} className='container py-14 grid grid-cols-col md:grid-cols-2 gap-4 md:gap-28 relative z-10'>
+                {/* <h1 className='py-4 tracking-wider text-3xl md:text-4xl font-semibold text-brandBlack text-center relative top-6 md:top-12'>About Us</h1> */}
 
                 {/* card section */}
-                <div className='text-center bg-brandLight/85 p-10 my-10 max-w-[100%] md:max-w-[90%] mx-auto rounded-md'>
-                    <p className='text-brandBlack text-lg'>
-                        We are a team of professionals, engeineers & investors that using our full efforts and time, we invented this nature-friendly sustainable full-featured ecobike coffee
-                    </p>
-                    <div className='pt-10 flex justify-center'>
-                        <button
-                            className='flex justify-center items-center gap-2 bg-brandRed text-xl h-[40px] text-brandLight px-5 py-2 hover:scale-105 duration-200'
-                        >
-                            {/* <FaUser /> */}
-                            Contact Us
-                        </button>
+                    <div className='lg:-rotate-12 text-center h-fit bg-brandLight/90 px-4 py-8 my-10 mx-auto rounded-lg lg:max-w-[70%] border-2 border-brandBlack'>
+                        <p className='text-brandBlack text-lg font-medium tracking-tight'>
+                            We are a team of professionals, engeineers & investors that using our full efforts and time, we invented this nature-friendly sustainable full-featured ecobike coffee
+                        </p>
                     </div>
-                </div>
+                    <div className='lg:rotate-12 text-center h-fit bg-brandLight/90 px-4 py-8 my-10 mt-24 mx-auto rounded-lg lg:max-w-[70%]'>
+                        <p className='text-brandBlack text-lg font-medium tracking-tight'>
+                            We are a team of professionals, engeineers & investors that using our full efforts and time, we invented this nature-friendly sustainable full-featured ecobike coffee
+                        </p>
+                    </div>
+                
+                
+
             </div>
             {/* wave vector */}
-            <div>
+            {/* <div className='backdrop-blur-lg'>
                 <img 
-                  // src={vector} 
+                  src={vector} 
                   alt="" 
-                  className='absolute top-0 right-0 w-full h-[300px] md:h-[350px]' />
-            </div>
+                  className='absolute bottom-60 right-0 w-full h-[300px] md:h-[350px]' />
+            </div> */}
         </div>
     </>
 

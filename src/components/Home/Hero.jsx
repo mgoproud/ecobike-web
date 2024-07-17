@@ -36,7 +36,7 @@ const Hero = () => {
                             // data-aos='fade-up' 
                             // data-aos-delay='500'
                         >
-                            <PrimaryButton text='Discover More' />
+                            <PrimaryButton btnClasses='bg-brandGreen' arrowsClasses='bg-brandDarkGreen' value='Discover More' />
                         </div>  
                     </div>
                     <div 

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
-
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, Outlet } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Contact from "./components/Contact/Contact";
@@ -9,7 +8,17 @@ import 'aos/dist/aos.css'
 import './App.css'
 
 
+
 function App() {
+
+//   const [itemData, setItemData] = useState({
+//     id: '',
+//     title: '',
+//     img: '',
+//     description: '',
+//     price: null,
+
+// })
 
   const [showPopup, setShowPopup] = useState(false)
   const [showMessage, setShowMessage] = useState(false)
@@ -25,7 +34,7 @@ useEffect(() => {
 }, [])
 
   return (
-      <div className='overflow-x-hidden w-full min-h-[100vh] flex flex-col'>
+      <div className='overflow-x-hidden w-full min-h-[100vh] flex flex-col bg-brandLight'>
           <Navbar showPopup={showPopup} setShowPopup={setShowPopup} />
           <Outlet />
           <Footer />

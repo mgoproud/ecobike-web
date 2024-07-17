@@ -16,7 +16,7 @@ const Footer = () => {
                         {/* Address Section */}
                         <div className="text-center space-y-2 lg:space-y-4">
                             <div className="flex justify-center">
-                            <IoLocationSharp className="text-4xl lg:text-5xl" />
+                            <IoLocationSharp className="text-4xl lg:text-5xl text-brandBlack" />
                             </div>
                             <p className="text-md">
                                 Zone 7 Main Road,
@@ -28,9 +28,9 @@ const Footer = () => {
                         {/* Email Section */}
                         <div className="text-center space-y-2 lg:space-y-4 ">
                             <div className="flex justify-center">
-                            <MdEmail className="text-4xl lg:text-5xl" />
+                            <MdEmail className="text-4xl lg:text-5xl text-brandBlack" />
                             </div>
-                            <div className="text-md">
+                            <div className="text-md text-brandBlack">
                                 <p>info@ecobikecoffee.com</p>
                                 <p>operations@ecobikecoffee.com</p>
                                 {/* <p></p> */}
@@ -38,9 +38,9 @@ const Footer = () => {
                         </div>
                         <div className="text-center space-y-2 lg:space-y-4 ">
                             <div className="flex justify-center">
-                            <FaPhone className="text-4xl lg:text-5xl" />
+                            <FaPhone className="text-4xl lg:text-5xl text-brandBlack" />
                             </div>
-                            <div className="text-md">
+                            <div className="text-md text-brandBlack">
                                 <p>+961 81 694472 - Operations</p>
                                 <p>+961 3 634440 - Info</p>
                                 {/* <p></p> */}

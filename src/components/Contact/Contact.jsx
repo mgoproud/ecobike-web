@@ -1,7 +1,10 @@
 import { useRef, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import { IoCloseOutline } from 'react-icons/io5'
 import emailjs from '@emailjs/browser'
+import PrimaryButton from '../Shared/PrimaryButton'
+import ecobikeImg from '../../assets/images/hero-ecobike.jpeg'
 
 const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
 
@@ -68,26 +71,44 @@ const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
       {
     showPopup && (
         // <div>
-            <div className="h-screen w-screen fixed top-0 left-0 bg-brandBlack/60 z-50 backdrop-blur-md">
-                <div className='relative top-[58%] left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 shadow-md bg-white rounded-md duration-200 md:mx-0 w-[95%] md:w-[600px] lg:w-[680px]'>
+            <div className="h-screen w-screen fixed top-0 left-0 bg-brandBlack/60 backdrop-blur-md z-[9999]">
+                <div className='relative top-[50%] lg:top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 lg:p-10 shadow-md bg-white rounded-md duration-200 md:mx-0 w-[95%] md:w-[600px] lg:w-[800px]'>
                 
-                {/* header section */}
-                <div className='flex items-center justify-between my-3 mx-1'>
-                    <div>
-                        <h1 className='text-2xl font-semibold text-brandBlack text-center mb-3'>Contact Us</h1>
-
+ <div className='fixed top-3 right-3'>
+                        <IoCloseOutline 
+                            className='text-3xl cursor-pointer hover:text-brandDarkRed '
+                            onClick={() => setShowPopup(false)}
+                        />
                     </div>
-                    <div>
+
+                {/* header section */}
+                <div className='flex items-center justify-between my-8 md:my-3 mx-1'>
+                    <div className='flex items-center justify-between mb-4'>
+                        <div className='z-[9999] text-brandRed text-5xl font-semibold tracking-wide p-0'>
+                            <NavLink 
+                                className='font-cursive'
+                                to='/'
+                                onClick={() =>setShowPopup(false)}    
+                            >
+                                ecobike coffee
+                            </NavLink>
+                            <h2 className='text-2xl font-semibold text-brandBlack mb-3'>Contact Us</h2>
+                        </div>
+                        <div className='w-[40%] md:w-[30%]'>
+                            <img src={ecobikeImg} alt='ecobike image' className='rounded-md'/>
+                        </div>
+                    </div>
+                    {/* <div>
                         <IoCloseOutline 
                             className='text-3xl cursor-pointer'
                             onClick={() => setShowPopup(false)}
                         />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* contact form */}
-                <form className='my-4' ref={form} onSubmit={handleSubmit}>
-                    <div className='flex flex-col md:flex-row items-center my-4'>
+                <form className='my-4  rounded-sm p-5 md:p-2' ref={form} onSubmit={handleSubmit}>
+                    <div className='flex flex-col md:flex-row items-center md:my-4'>
                         <div className='w-fit'>
                             <input 
                                 type='text' 
@@ -95,7 +116,7 @@ const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                                 placeholder='Name' 
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                className='outline-none w-full md:w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'    
+                                className='outline-none w-full md:w-4/5 rounded-sm border border-brandBlack/50 dark:border-brandBlack/60 px-2 py-1 mb-4'    
                                 required
                             />
                             <input 
@@ -104,7 +125,7 @@ const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                                 placeholder='Email Address' 
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className='outline-none w-full md:w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'    
+                                className='outline-none w-full md:w-4/5 rounded-sm border border-brandBlack/50 dark:border-brandBlack/60 px-2 py-1 mb-4'    
                                 required
                             />
                             <input 
@@ -113,7 +134,7 @@ const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                                 placeholder='Occupation' 
                                 value={occupation}
                                 onChange={(e) => setOccupation(e.target.value)}
-                                className='outline-none w-full md:w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'    
+                                className='outline-none w-full md:w-4/5 rounded-sm border border-brandBlack/50 dark:border-brandBlack/60 px-2 py-1 mb-4'    
                                 required
                             />
                             <input 
@@ -122,7 +143,7 @@ const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                                 placeholder='Phone Number' 
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)}
-                                className='outline-none w-full md:w-4/5 rounded-md border border-brandGray/40 dark:border-brandGray/60 px-2 py-1 mb-4'        
+                                className='outline-none w-full md:w-4/5 rounded-sm border border-brandBlack/50 dark:border-brandBlack/60 px-2 py-1 mb-4'        
                             />
                         </div>
                         <div className='w-full p-2'>
@@ -132,18 +153,19 @@ const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                                 placeholder='Type your inquiry'
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                className='outline-none border border-brandGray w-full h-[12rem] p-2'
+                                className='outline-none border border-brandBlack/50 w-full h-[12rem] p-2 rounded-sm'
                                 required></textarea>
                                 
                         </div>
                     </div>
-                    <button 
+                    <PrimaryButton className='mt-0' btnClasses='bg-brandRed w-[100%] hover:bg-brandDarkRed' arrowsClasses='bg-brandDarkRed' value='Send' type='submit' setShowPopup={setShowPopup}  />
+                    {/* <button 
                         type='submit'
                         className='w-full bg-brandRed hover:bg-brandDarkRed text-brandLight p-2 rounded-md'
                         // onClick={() => setShowPopup(false)}
                         >
                         Send
-                    </button>
+                    </button> */}
                 </form>
                 
                 {/* social login */}

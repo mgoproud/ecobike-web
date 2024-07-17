@@ -16,7 +16,7 @@ export default {
         brandDarkGreen: '#1e4826',
         brandLight: '#faf8e4',
         brandLight80: '#f7f5e3c1',
-        brandBlack: '#1c1a17',
+        brandBlack: '#231c13',
         brandGray: '#282624',
         secondary: '#888',
         dark: '#303030'
