@@ -12,14 +12,14 @@ const BgStyle = {
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     width: '100%',
-    height: '100%'
+    minHeight: '70vh'
 }
 
 const Hero = () => {
   return (
     <>
-        <div className='relative w-full'  style={BgStyle}>
-            <div className="bg-brandLight/80 rounded-lg h-fit py-10">
+        <div className='relative w-full min-h-[70vh]'  style={BgStyle}>
+            <div className="bg-brandLight/80 rounded-lg py-10 min-h-[70vh] flex flex-col justify-center">
             
                 <div className="container grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center place-content-start md:place-content-center p-5 lg:px-10">
                     {/* text */}

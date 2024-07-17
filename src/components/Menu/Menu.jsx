@@ -40,7 +40,7 @@ const itemName = useParams()
     <>
         <div className='relative w-full' style={BgStyle}>
             <div className="bg-brandLight/80 rounded-lg">
-                <div className='tracking-wide flex flex-col items-center pt-6 relative top-10 mb-3'>
+                <div className='tracking-wide flex flex-col items-center relative top-10'>
                     <h2 className='inline-block font-cursive text-5xl text-brandRed font-semibold'>ecobike coffee</h2>
                     <p className='font-inter text-2xl text-brandBlack font-semibold'>menu</p>
                 </div>
@@ -54,7 +54,7 @@ const itemName = useParams()
                                     { cat.menuItems?.map((data) => (
                                         <li key={data.name} className='group list-none px-3 py-2 rounded-xl '>
                                             <Link 
-                                                className='uppercase group-hover:text-brandRed text-lg flex justify-between p-0 max-h-[28px] !duration-200 speed' 
+                                                className='uppercase group-hover:text-brandRed text-md flex justify-between p-0 max-h-[28px] !duration-200 speed' 
                                                 onClick={() => handleMenuData(data)}
                                                 to={data.name}
                                                 
