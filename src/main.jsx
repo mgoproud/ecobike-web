@@ -9,7 +9,7 @@ import About from './components/About/About'
 import Features from './components/Features/Features'
 import Menu from './components/Menu/Menu'
 import Community from './components/Community/Community'
-import MenuItem from './components/Menu/MenuItem.jsx';
+import MenuItem from './components/Menu/MenuItem';
 import MenuContextProvider from './contexts/MenuContext';
 
 
@@ -20,9 +20,8 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="features" element={<Features />} />
-      <Route path='menu' element={<Menu />} >
-        <Route path=":name" element={<MenuItem />} />
-      </Route>
+      <Route path='menu' element={<Menu />} />
+        <Route path="menu/:name" element={<MenuItem />} />
       <Route path="community" element={<Community />} />
     </Route>
   )

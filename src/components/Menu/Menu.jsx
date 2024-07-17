@@ -4,7 +4,7 @@ import HeroBg from '../../assets/images/bg-colors.jpg'
 import { menu } from '../../data'
 import { Link, useParams } from 'react-router-dom'
 import { MenuContext } from '../../contexts/MenuContext'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 
 const BgStyle = {
     backgroundImage: `url(${HeroBg})`,
@@ -18,23 +18,24 @@ const BgStyle = {
 
 const Menu = () => {
 
-    const { setCurrentItem } = useContext(MenuContext)
+    const { currentItem, setCurrentItem } = useContext(MenuContext)
 
-    const createId = uuidv4()
-
-const itemName = useParams()
 
     const handleMenuData = (data) => {
         const item =  {
-            id: createId(),
+            id: uuidv4(),
             name: data.name && data.name,
-            img: data.img && data.img,
+            // img: data.img && data.img,
             description: data.description && data.description,
             price: data.price && data.price,
         }
 
         setCurrentItem(item)
+        
+        localStorage.setItem('currentItem', JSON.stringify(item))
     }
+    
+
 
   return (
     <>
@@ -48,11 +49,12 @@ const itemName = useParams()
                 <div className="container grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-center lg:px-14 py-[4rem]">
                     {    
                     menu?.map((cat) => (
-                            <div key={cat.category} className='space-y-4 md:space-y-6 lg:space-y-9 text-primary order-2 sm:order-1 px-2 lg:px-0 max-h-[440px]'>
+                            <div key={() => uuidv4()} className='space-y-4 md:space-y-6 lg:space-y-9 text-primary order-2 sm:order-1 px-2 lg:px-0 max-h-[440px]'>
                                 <h2 className='text-center text-2xl font-semibold '>{cat.category}</h2>
+                                
                                 <ul className='w-[400px] flex flex-col justify-center bg-brandBlack text-brandLight px-4 py-6 rounded-xl !my-5'>
                                     { cat.menuItems?.map((data) => (
-                                        <li key={data.name} className='group list-none px-3 py-2 rounded-xl '>
+                                    data && <li key={() => uuidv4()} className='group list-none px-3 py-2 rounded-xl '>
                                             <Link 
                                                 className='uppercase group-hover:text-brandRed text-md flex justify-between p-0 max-h-[28px] !duration-200 speed' 
                                                 onClick={() => handleMenuData(data)}
@@ -72,6 +74,7 @@ const itemName = useParams()
                                         
                                 )) }
                                 </ul>
+
                             </div>
                         ))
                         }

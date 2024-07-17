@@ -34,7 +34,7 @@ useEffect(() => {
 }, [])
 
   return (
-      <div className='overflow-x-hidden w-full min-h-[100vh] flex flex-col bg-brandLight'>
+      <div className='overflow-x-hidden w-full min-h-[100vh] flex flex-col justify-between bg-brandLight'>
           <Navbar showPopup={showPopup} setShowPopup={setShowPopup} />
           <Outlet />
           <Footer />

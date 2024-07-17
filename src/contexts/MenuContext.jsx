@@ -5,7 +5,7 @@ export const MenuContext = createContext({
     name: '',
     img: null,
     description: '',
-    price: null,
+    // price: null,
 })
 
 const MenuContextProvider = ({ children }) => {
