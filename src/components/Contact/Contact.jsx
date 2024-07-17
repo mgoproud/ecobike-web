@@ -74,7 +74,7 @@ const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
             <div className="h-screen w-screen fixed top-0 left-0 bg-brandBlack/60 backdrop-blur-md z-[9999]">
                 <div className='relative top-[50%] lg:top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 lg:p-10 shadow-md bg-white rounded-md duration-200 md:mx-0 w-[95%] md:w-[600px] lg:w-[800px]'>
                 
- <div className='fixed top-3 right-3'>
+                    <div className='fixed top-3 right-3'>
                         <IoCloseOutline 
                             className='text-3xl cursor-pointer hover:text-brandDarkRed '
                             onClick={() => setShowPopup(false)}
@@ -82,7 +82,7 @@ const Contact = ({ showPopup, setShowPopup, showMessage, setShowMessage }) => {
                     </div>
 
                 {/* header section */}
-                <div className='flex items-center justify-between my-8 md:my-3 mx-1'>
+                <div className='flex items-center justify-between my-3 mx-1'>
                     <div className='flex items-center justify-between mb-4'>
                         <div className='z-[9999] text-brandRed text-5xl font-semibold tracking-wide p-0'>
                             <NavLink 
