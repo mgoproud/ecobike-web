@@ -6,7 +6,7 @@ import coffeeCup from '../../assets/images/cup-1.png'
 
 const Banner = () => {
   return (
-    <div className='container md:py-14 relative mb-7'>
+    <div className='container md:py-10 relative'>
       <div 
         // data-aos='fade' 
         // data-aos-delay='300' 
@@ -17,20 +17,20 @@ const Banner = () => {
         </h2>
 
         <div className='space-y-10'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 py-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-10 py-10'>
 
             <div>
-              <p className='text-[1.15rem]'>Enjoy our wide range of unique quality beverages guaranteed to exceed your satisfaction</p>
+              <p className='text-[1.15rem] text-center'>Enjoy our wide range of unique quality beverages guaranteed to exceed your satisfaction</p>
             </div>
             <div></div>
 
 
           </div>
           {/* <div className='grid grid-cols-2 gap-4 py-10'> */}
-          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 py-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-10 py-10'>
           <div></div>
             <div className='lg:py-8'>
-              <p className='text-[1.15rem]'>Our ecobike is perfectly engeineered by state of the art skilled engeineers to meet our complete need for the biggest operation while preserving the full nature's form by depending on 100% green & renewable sustainable technologies</p>
+              <p className='text-[1.15rem] text-center'>Our ecobike is perfectly engeineered by state of the art skilled engeineers to meet our complete need for the biggest operation while preserving the full nature's form by depending on 100% green & renewable sustainable technologies</p>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ const Banner = () => {
           // data-aos-offset='0' 
           className='flex justify-center mt-40 md:mt-10'
         >
-          <PrimaryButton value='Explore Our Features' />
+          <PrimaryButton btnClasses='bg-brandGreen' arrowsClasses='bg-brandDarkGreen' value='Explore Our Features' />
         </div>
       </div>
 
@@ -63,7 +63,7 @@ const Banner = () => {
         // data-aos='fade-left'
         className='absolute left-[42%] md:left-[32rem] lg:left-[60rem] top-[30%] md:top-[9rem] lg:top-[8rem] opacity-90 '
       >
-        <img src={coffeeCup} alt="green technology" className='max-w-[90px] md:max-w-[100px] lg:max-w-[120px]' />
+        <img src={coffeeCup} alt="green technology" className='w-[100px] lg:max-w-[120px]' />
       </div>
     </div>
   )

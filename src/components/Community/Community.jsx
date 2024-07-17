@@ -16,17 +16,17 @@ const Community = ({ showPopup }) => {
   return (
 
 <>
-        <div className=' bg-brandRed/40 flex'>
+        <div className=' bg-brandRed/20 flex px-4'>
             <div style={bgStyle} className='container py-14 grid grid-cols-col md:grid-cols-2 gap-4 md:gap-28 relative z-10'>
                 {/* <h1 className='py-4 tracking-wider text-3xl md:text-4xl font-semibold text-brandBlack text-center relative top-6 md:top-12'>About Us</h1> */}
 
                 {/* card section */}
-                    <div className='lg:-rotate-12 text-center h-fit bg-brandLight/90 px-4 py-8 my-10 mx-auto rounded-lg lg:max-w-[70%] border-2 border-brandBlack'>
+                    <div className='w-[80%] lg:w-[50%] -rotate-12 text-center h-fit bg-brandLight/90 px-4 py-8 my-10 mx-auto rounded-lg  border-2 border-brandBlack'>
                         <p className='text-brandBlack text-lg font-medium tracking-tight'>
                             We are a team of professionals, engeineers & investors that using our full efforts and time, we invented this nature-friendly sustainable full-featured ecobike coffee
                         </p>
                     </div>
-                    <div className='lg:rotate-12 text-center h-fit bg-brandLight/90 px-4 py-8 my-10 mt-24 mx-auto rounded-lg lg:max-w-[70%]'>
+                    <div className='w-[80%] lg:w-[50%] rotate-12 text-center h-fit bg-brandLight/90 px-4 py-8 my-10 mt-24 mx-auto rounded-lg'>
                         <p className='text-brandBlack text-lg font-medium tracking-tight'>
                             We are a team of professionals, engeineers & investors that using our full efforts and time, we invented this nature-friendly sustainable full-featured ecobike coffee
                         </p>
