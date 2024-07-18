@@ -7,8 +7,9 @@ const bgStyle = {
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   backgroundSize: 'contain',
+  // backgroundSize: 'cover',
   width: '100%',
-  height: '100vh',
+  minHeight: '80vh',
   position: 'relative',
 }
 
